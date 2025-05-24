@@ -1,3 +1,75 @@
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
 
+.container {
+  background: white;
+  max-width: 400px;
+  width: 100%;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.container h1 {
+  margin-bottom: 20px;
+}
+.container div {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.container div input.input {
+  padding: 12px 15px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+.container div button.btn {
+  padding: 12px 20px;
+  background-color: #0f3853;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 16px;
+}
+.container .courses ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.container .courses ul li {
+  background: #f0f0f0;
+  margin-bottom: 12px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+.container .courses ul li button.delete-btn {
+  background-color: #cdbebd;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+.container .courses ul li button.delete-btn:hover {
+  background-color: rgb(183.0172413793, 161.4224137931, 159.9827586207);
+}
 
 /*# sourceMappingURL=style.css.map */

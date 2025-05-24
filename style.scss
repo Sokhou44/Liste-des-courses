@@ -1,0 +1,92 @@
+$primary-color: #0f3853;
+$secondary-color: #cdbebd;
+$background-color: #f9f9f9;
+$text-color: #333;
+$border-radius: 8px;
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: white;
+  max-width: 400px;
+  width: 100%;
+  padding: 30px 40px;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  div {
+    margin-bottom: 20px;
+    display: flex;
+
+    justify-content: center;
+    align-self:center;
+
+    input.input {
+      padding: 12px 15px;
+      width: 70%;
+      border: 1px solid #ccc;
+      border-radius: $border-radius;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+
+    button.btn {
+      padding: 12px 20px;
+      background-color: $primary-color;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: $border-radius;
+      cursor: pointer;
+      margin-left: 10px;
+      font-size: 16px;
+    }
+  }
+
+  .courses {
+    ul {
+      list-style: none;
+      padding: 0;
+      width: 100%;
+      
+
+      li {
+        background: #f0f0f0;
+        margin-bottom: 12px;
+        padding: 12px 15px;
+        border-radius: $border-radius;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+
+        button.delete-btn {
+          background-color: $secondary-color;
+          border: none;
+          color: white;
+          border-radius: $border-radius;
+          cursor: pointer;
+          font-size: 14px;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: darken($secondary-color, 10%);
+          }
+        }
+      }
+    }
+  }
+}
