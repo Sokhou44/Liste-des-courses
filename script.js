@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 const button = document.querySelector(".btn");
 const input = document.querySelector(".input");
@@ -14,24 +14,21 @@ if (texte !=="") {
     
     li.textContent = texte;
 
+    const deleteBtn = document.createElement("button");
+
+    deleteBtn.textContent = "Supprimer";
+
+    deleteBtn.style.marginLeft = "10px";
+
+    deleteBtn.addEventListener("click", function () {
+      ul.removeChild(li);
+    });
+
+    li.appendChild(deleteBtn);
+
     ul.appendChild(li);
 
-    input.value = "";
+    input.value = ""; 
 }
-
-const deleteButton = document.createElement("button");
-
-deleteButton.textContent = "supprimer";
-
-deleteButton.classList.add("delete-Btn");
-
-deleteButton.onclick = function() {
-
-    container.removeChild(li);
-}
-
-    li.appendChild(deleteButton);
-
-    container.appendChild(li);
 
 });
